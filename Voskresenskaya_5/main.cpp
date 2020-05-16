@@ -36,13 +36,13 @@ public:
 		return first * second;
 	}
 
-	virtual void read()
+	void read()
 	{
 		cout << "Введите пару: ";
 		cin >> first >> second;
 	}
 
-	virtual void display()
+	void display()
 	{
 		cout << "Pair{first: " << first << ", second: " << second << "}\n";
 	}
@@ -86,7 +86,7 @@ public:
 		return mult();
 	}
 
-	void display() override
+	void display()
 	{
 		cout << "Rect{a: " << first << ", b: " << second <<
 			", perimeter: " << get_perimeter() << ", area: " << get_area() << "}\n";
